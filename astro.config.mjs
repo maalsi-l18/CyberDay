@@ -9,7 +9,7 @@ export default defineConfig({
     base: '/CyberDay',
     integrations: [starlight({
         title: 'CyberDay',
-        social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/maalsi-l18/CyberDay.git' }],
+        social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/maalsi-l18/CyberDay' }],
         sidebar: [
             {
                 label: 'CyberDay 2025',

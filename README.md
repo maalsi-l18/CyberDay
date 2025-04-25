@@ -30,7 +30,7 @@ Le site est automatiquement déployé sur GitHub Pages à chaque push sur la bra
 
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/maalsi-l18/CyberDay.git
+   git clone https://github.com/maalsi-l18/CyberDay
    cd CyberDay
    ```
 
