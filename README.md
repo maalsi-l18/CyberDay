@@ -1,54 +1,70 @@
-# Starlight Starter Kit: Basics
+# CyberDay - Outil de Gestion et Suivi du Projet
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-```
-npm create astro@latest -- --template starlight
-```
+## 📋 À propos
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/withastro/starlight&create_from_path=examples/basics)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
+CyberDay est un outil de gestion et de suivi de projet développé par les étudiants MAALSI & MISCI du CESI École d'Ingénieurs. Cette plateforme permet de centraliser, organiser et suivre tous les aspects des événements CyberDay.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## ✨ Fonctionnalités
 
-## 🚀 Project Structure
+- **Organisation structurée** : Répartition des responsabilités par groupes de travail
+- **Centralisation des informations** : Toutes les informations et ressources accessibles en un seul endroit
+- **Suivi d'avancement** : Visualisation de l'état d'avancement global et par groupe
+- **Documentation collaborative** : Contribution de tous les membres de l'équipe
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+## 🚀 Déploiement
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   ├── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
+Le site est automatiquement déployé sur GitHub Pages à chaque push sur la branche main grâce à GitHub Actions.
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+**URL du site déployé** : [https://maalsi-l18.github.io/CyberDay/](https://maalsi-l18.github.io/CyberDay/)
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+## 💻 Développement local
 
-Static assets, like favicons, can be placed in the `public/` directory.
+### Prérequis
 
-## 🧞 Commands
+- Node.js (version 18 ou supérieure)
+- npm
 
-All commands are run from the root of the project, from a terminal:
+### Installation
 
-| Command                   | Action                                           |
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/maalsi-l18/CyberDay.git
+   cd CyberDay
+   ```
+
+2. Installez les dépendances :
+   ```bash
+   npm install
+   ```
+
+3. Lancez le serveur de développement :
+   ```bash
+   npm run dev
+   ```
+
+4. Ouvrez votre navigateur à l'adresse : [http://localhost:4321](http://localhost:4321)
+
+## 🧞 Commandes disponibles
+
+| Commande                  | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm install`             | Installe les dépendances                         |
+| `npm run dev`             | Lance le serveur de développement sur `localhost:4321` |
+| `npm run build`           | Construit le site pour la production dans `./dist/` |
+| `npm run preview`         | Prévisualise le site construit localement        |
 
-## 👀 Want to learn more?
+## 🔧 Technologies utilisées
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+- [Astro](https://astro.build/) - Framework web
+- [Starlight](https://starlight.astro.build/) - Thème de documentation
+- [React](https://reactjs.org/) - Bibliothèque UI pour les composants interactifs
+
+## 👥 Contributeurs
+
+Développé par les étudiants MAALSI & MISCI du CESI École d'Ingénieurs.
+
+## 📄 Licence
+
+Ce projet est sous licence MIT.
