@@ -1,0 +1,70 @@
+---
+title: Exemple de visualisation PDF
+---
+
+# 📄 Exemple de visualisation PDF
+
+Voici un exemple de visualisation d'un fichier PDF directement dans une page MDX.
+
+## Visualisation du devis
+
+Le composant PdfViewer permet d'afficher des fichiers PDF directement dans vos pages de documentation :
+
+<PdfViewer file="https://www.africau.edu/images/default/sample.pdf" client:visible />
+
+## Comment utiliser le composant
+
+Pour utiliser le composant PdfViewer dans vos fichiers MDX, suivez ces étapes :
+
+1. Importez le composant en bas de votre fichier MDX :
+```jsx
+import PdfViewer from '/src/components/PdfViewer.jsx'
+```
+
+2. Utilisez le composant dans votre contenu MDX :
+```jsx
+<PdfViewer file="/chemin/vers/votre/fichier.pdf" client:visible />
+```
+
+Le paramètre `client:visible` est important car il indique à Astro de rendre ce composant interactif côté client lorsqu'il devient visible dans la fenêtre du navigateur.
+
+## Chemins des fichiers
+
+Vous pouvez utiliser différents types de chemins pour vos fichiers PDF :
+
+### 1. PDF hébergés en ligne (recommandé)
+
+```jsx
+<PdfViewer file="https://example.com/chemin/vers/document.pdf" client:visible />
+```
+
+Cette méthode est la plus fiable car elle évite les problèmes de CORS et de chargement local.
+
+### 2. PDF locaux (dans le dossier public)
+
+```jsx
+<PdfViewer file="/docs/rapport.pdf" client:visible />
+```
+
+Les chemins des fichiers PDF doivent être relatifs au dossier `public`. Par exemple :
+- `/docs/devis.pdf` correspond au fichier `public/docs/devis.pdf`
+- `/assets/rapport.pdf` correspondrait au fichier `public/assets/rapport.pdf`
+
+## Fonctionnalités du visualiseur
+
+Le composant PdfViewer offre une interface complète et élégante :
+
+- Affichage du nom du fichier PDF avec une icône reconnaissable
+- Bouton pour ouvrir/fermer le PDF directement dans la page
+- Visualisation du PDF intégrée sans quitter la page
+- Bouton d'agrandissement pour ouvrir le PDF dans un modal
+- Modal avec dimensions optimales pour une lecture confortable
+- Possibilité de fermer le PDF ou le modal avec le bouton ou la touche Échap
+- Animation fluide à l'ouverture du modal
+- Arrière-plan semi-transparent pour mettre en évidence le modal
+- Design responsive qui s'adapte aux appareils mobiles
+- Effets de survol pour une meilleure expérience utilisateur
+
+---
+
+import PdfViewer from '/src/components/PdfViewer.jsx'
